@@ -20,6 +20,7 @@ body {
   border-bottom: 1px solid lightcoral;
   position: relative;
 }
+
 .task-tabs div {
   padding: 1em;
 }
@@ -36,5 +37,27 @@ body {
 .task {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1em;
 }
+
+.task-done {
+  text-decoration: line-through;
+}
+
+.icon {
+  background-color: white;
+}
+
+.icon i {
+  margin: 0 13px;
+}
+
+.fa-thumbs-up,
+.fa-trash-can {
+  color: lightcoral;
+}
+
+/* .task-background {
+  background-color: blue;
+} */
