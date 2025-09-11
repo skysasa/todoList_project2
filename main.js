@@ -22,7 +22,7 @@ function render() {
   for (let i = 0; i < taskList.length; i++) {
     if (taskList[i].isComplete == true) {
       resultHTML += `
-            <div class="task task-color">
+            <div class="task">
             <div class="task-done">${taskList[i].taskContent}</div>
             <div class="icon">
               <i onClick="toggleComplete('${taskList[i].id}')" class="fa-solid fa-thumbs-up fa-lg"></i>
@@ -30,8 +30,8 @@ function render() {
             </div>
           </div>`;
     } else {
-      resultHTML += `<div class="task task-color">
-      <div>${taskList[i].taskContent}</div>
+      resultHTML += `<div class="task">
+     <div class="task-content">${taskList[i].taskContent}</div>
       <div class="icon">
         <i onClick="toggleComplete('${taskList[i].id}')" class="fa-regular fa-thumbs-up fa-lg"></i>
         <i onClick="deleteTask('${taskList[i].id}')" class="fa-regular fa-trash-can fa-lg"></i>
