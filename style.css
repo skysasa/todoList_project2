@@ -4,6 +4,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+h1 {
+  color: rgb(250, 71, 101);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
 .container {
   background-color: white;
   min-height: 100vh;
@@ -13,6 +19,8 @@ body {
 .task-area {
   border: 1px solid lightcoral;
   margin-top: 2em;
+  color: rgb(253, 108, 108);
+  font-size: bold;
 }
 
 .task-tabs {
@@ -27,7 +35,7 @@ body {
 
 #under-line {
   height: 4px;
-  background-color: rgb(221, 116, 134);
+  background-color: rgb(224, 88, 111);
   position: absolute;
   width: 60px;
   left: 0px;
@@ -72,4 +80,41 @@ body {
 
 .task-tabs div {
   cursor: pointer;
+}
+
+#add {
+  background-color: rgb(247, 192, 192);
+  border: 0.5px solid rgb(253, 108, 108);
+  color: white;
+  font-size: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#add:hover {
+  background-color: lightcoral;
+  transform: scale(1.05);
+}
+
+#task-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(247, 192, 192);
+  border: 0.5px solid rgb(253, 108, 108);
+}
+
+@media (max-width: 450px) {
+  .container {
+    justify-items: center;
+  }
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #add {
+    width: 70%;
+  }
 }
