@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("/project2/img/project2background.jpg");
+  background-image: url("img/project2background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
