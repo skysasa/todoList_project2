@@ -33,7 +33,7 @@ function addTask() {
   };
   taskList.push(task);
   console.log(taskList);
-  render();
+  filter();
   taskInput.value = "";
   taskInput.focus();
 }

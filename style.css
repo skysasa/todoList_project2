@@ -61,13 +61,12 @@ h1 {
 .task-content {
   flex: 1;
   padding: 1em;
-  border-radius: 8px;
   background-color: white;
 }
 
-.icon {
+/* .icon {
   background-color: white;
-}
+} */
 
 .icon i {
   margin: 0 13px;
